@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+body{
+    margin: 0%;
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 5;
+}
+.corpo{
+    text-align: center;
+}
+.barraSuperior{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.barraInferior{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 5%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+}
+#acaousuario{
+    border-radius: 50%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+.direct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    
+}
+#logoimg{
+    margin-left: 10%;
+    width: 21%;
+}
+#ddimg{
+    margin-right: 1px;
+    width: 35%;
+    margin-left: 50%;
+}
+.fotousuario{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    padding: 1%;
+}
+.publicacao{
+    display: flex;
+    flex-direction: column;
+}
+.feed{
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+.user{
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+.insights{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+  }
+.acao{
+    width: 25px;
+    height: 25px;
+}
+.save{
+    height: 100%;
+    width: 90%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+@media(min-width: 600px) {
+    .feed{
+        width: 50%;
+        margin: auto;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .publicacao{
+        width: 100%;
+        border: 1px solid gray;
+        margin-bottom: 10px;
+    }
+    .barraSuperior{
+        border: 1px solid gray;
+    }
+    #logoimg{
+        width: 10%;
+    }
+    #ddimg{
+        width: 15%;
+    }
+    .save{
+        width: 95%;
+    }
+}

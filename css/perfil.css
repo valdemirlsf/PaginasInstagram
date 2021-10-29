@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+body{
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    font-weight: 5;
+}
+.barraSuperior{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid lightgray;
+    font-size: 110%;
+    top: 0;
+
+}
+.barraInferior{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 5%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+#acaousuario{
+    border-radius: 50%;
+}
+.acao{
+    width: 25px;
+    height: 25px;
+}
+.icons{
+    padding-right: 5px;
+}
+.iconsSuperior{
+    width: 20px;
+    height: 20px;
+}
+.username{
+    padding-left: 10px;
+}
+.fotoPerfil{
+    width: 22%;
+    margin-left: -5px;
+    
+    
+}
+#fotoPerfil{
+    border-radius: 50%;
+    border: 1px solid gray;
+    padding: 1.4%;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.desc{
+    text-align: center;
+    line-height: 0.9;
+}
+.ru{
+    font-size: 78%;
+    
+}
+.bio{
+    padding: 3%;
+    font-size: 80%;
+}
+.bio p{
+    margin:0;
+}
+.editarPerfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.downButton{
+    width: 8%;
+}
+.editButton{
+    width: 85%;
+    padding: 1%;
+}
+.editarPerfil{
+    display: flex;
+    height: 35px;
+}
+.editarPerfil button{
+    color: white;
+    background-color:  #0095f6;
+    border: none;
+    font-size: 84%;
+    margin: 1px;
+}
+.posts{
+    width: 100%;
+    
+    margin-top: 10px;
+}
+.barraacoes{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.barraacoes img{
+    width: 33px;
+    height: 33px;
+}
+.fotos img{
+    width: 33.3%;
+    float: left;
+    margin:0;
+}
+@media(min-width: 600px){
+    body{
+        font-size: 25px;
+    }
+}
