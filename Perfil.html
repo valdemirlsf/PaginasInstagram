@@ -7,7 +7,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/perfil.css">
 </head>
-<body>
+
+<script>
+    function asd(){
+        var elemento= document.getElementById('fotos');
+        var elemento2= document.getElementById("actionbar");
+        var element3 = document.getElementById("barraInferior");
+        var posicao = elemento.offsetTop-window.scrollY;
+        console.log(posicao);
+        if(posicao<40){
+            elemento2.style.position = 'fixed';
+            elemento2.style.width = '100%';
+            elemento2.style.top = '0';
+            elemento2.style.backgroundColor = 'white';
+            elemento.style.marginTop = '14%';
+            element3.style.display = 'none';
+        }else{
+            elemento2.style.position = 'static';
+            elemento.style.marginTop = '0px';
+            element3.style.display = 'flex';
+        }
+    }
+</script>
+<body onscroll="asd()">
     <div class="corpo">
         <div class="barraSuperior">
             <div class="logo">
@@ -49,7 +71,7 @@
                 <img src="Logos/tagged.png"  alt="" srcset="">
             </div>
             
-            <div class="fotos">
+            <div class="fotos" id="fotos">
                 <img src="Img/perfis-de-caes-para-seguir-no-instagram-top-10-melhores-2.jpg" alt="" srcset="">
                 <img src="Img/download.jfif" alt="" srcset="">
                 <img src="Img/31745534_203056360306728_2980746391921360896_n.jpg" alt="" srcset="">
@@ -71,7 +93,7 @@
             </div>
         </div>
         
-        <div class="barraInferior">
+        <div class="barraInferior" id="barraInferior">
             <img src="Logos/4116340.png" class="acao" alt="" srcset="">
             <img src="Logos/search.png" class="acao" alt="" srcset="">
             <img src="Logos/add.png" class="acao" alt="" srcset="">

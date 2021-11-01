@@ -84,8 +84,15 @@ body{
 }
 .downButton{
     width: 8%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .editButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 85%;
     padding: 1%;
 }
@@ -108,7 +115,6 @@ body{
 .barraacoes{
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid gray;
     padding-top: 5px;
     padding-bottom: 5px;
 }
